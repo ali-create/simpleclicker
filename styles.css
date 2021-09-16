@@ -19,8 +19,8 @@ body {
 }
 
 #itemBox {
-  width: 700px;
-  height: 200px;
+  width: 723px;
+  height: 723px;
   border: 5px var(--black) solid;
   padding: 10px 10px 10px 10px;
   border-radius: 1rem;
@@ -181,11 +181,11 @@ body {
   background-color: rgb(0, 0, 0);
 }
 .volumeSFX::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Override default look */
+  -webkit-appearance: none;
   appearance: none;
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
-  background: white; /* Green background */
-  cursor: pointer; /* Cursor on hover */
+  width: 25px;
+  height: 25px; 
+  background: white; 
+  cursor: pointer; 
   border-radius: 50%;
 }
