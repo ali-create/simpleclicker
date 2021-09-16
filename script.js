@@ -35,8 +35,8 @@ const clickEvent = function () {
     mainItem.style.cursor = mainItem.style.cursor = "unset";
 
     setTimeout(function () {
-      mainItem.style.left = `${random(40, 620, false)}px`;
-      mainItem.style.top = `${random(40, 120, false)}px`;
+      mainItem.style.left = `${random(40, 633, false)}px`;
+      mainItem.style.top = `${random(40, 633, false)}px`;
       score = +score + pointsPerClick;
       scoreText.textContent = (+score).toFixed(3);
       mainItem.classList.add("on");
