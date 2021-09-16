@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <audio src="sfx/click_mainItem.wav" class="click_mainItemSFX"></audio>
+    <audio src="sfx/upgrade_fail.wav" class="upgrade_failSFX"></audio>
+    <audio src="sfx/upgrade_success.wav" class="upgrade_successSFX"></audio>
+    <audio src="sfx/click_settings.wav" class="click_settingsSFX"></audio>
+    <title>Simple Clicker</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="">
+      <div class="overlay hidden"></div>
+      <div class="item--box" id="itemBox">
+        <div class="item--self on" id="item"></div>
+      </div>
+      <!-- <br />
+    <input type="number" name="" id="input" class="input cooldown--input" />
+    <br />
+    <br />
+    <button class="btn set" id="btn">Set Cooldown</button> -->
+      <br />
+      <nav class="top--bar">
+        <div class="scoreContainer">
+          <span class="text">Points: </span>
+          <span class="text score">0.000</span>
+        </div>
+        &nbsp; &nbsp; &nbsp;
+        <button class="upgrade">
+          Upgrade Cooldown <span class="cooldownPrice">1</span> point(s)
+        </button>
+        &nbsp; &nbsp; &nbsp;
+        <button class="upgradePrice">
+          Upgrade Points <br />
+          <span class="pointsPrice">1</span> point(s)
+        </button>
+        &nbsp; &nbsp; &nbsp;
+        <button class="settings">Settings</button>
+      </nav>
+      <center>
+        <div class="settingsModal hidden">
+          <h1 style="border-bottom: 3px black solid; padding-bottom: 10px">
+            Settings
+          </h1>
+          <br />
+          <p>Points per Click: <span class="ppc">N/A</span></p>
+          <p>Cooldown: <span class="cooldownSettings">N/A</span>ms</p>
+          <input type="checkbox" name="Dark Mode" class="darkMode" />
+          <span> Dark Mode</span>
+          <p>Volume</p>
+          <input type="range" class="volumeSFX" />
+          <br />
+          <br />
+          <button class="done">Done</button>
+        </div>
+      </center>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

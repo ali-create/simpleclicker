@@ -1,0 +1,191 @@
+:root {
+  --black: black;
+  --white: white;
+}
+
+body {
+  background-color: var(--white);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.app {
+  align-items: center;
+  width: 5000px;
+  position: fixed;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#itemBox {
+  width: 700px;
+  height: 200px;
+  border: 5px var(--black) solid;
+  padding: 10px 10px 10px 10px;
+  border-radius: 1rem;
+  /*
+  gradient by:
+    https://cssgradient.io/
+*/
+  background: rgb(63, 94, 251);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(63, 94, 251, 0) 0%,
+    rgba(150, 150, 150, 0.1785714285714286) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(63, 94, 251, 0) 0%,
+    rgba(150, 150, 150, 0.1785714285714286) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 0) 0%,
+    rgba(150, 150, 150, 0.1785714285714286) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endColorstr="#969696",GradientType=1);
+}
+#item {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border: 5px var(--black) solid;
+  background-color: red;
+  border-radius: 1rem;
+  left: 34;
+  top: 34;
+  transition: background-color 0.401s;
+}
+#item:hover {
+  cursor: pointer;
+}
+
+.btn {
+  font-size: 30px;
+}
+.text {
+  font-size: 30px;
+}
+.scoreContainer {
+  color: var(--black);
+  display: flex;
+  background-color: rgb(224, 143, 111);
+  width: 190px;
+  padding: 15px 60px 10px 20px;
+  border-radius: 1rem;
+  color: var(--white);
+  border: 5px var(--black) solid;
+}
+.top--bar {
+  display: flex;
+}
+.upgrade {
+  color: var(--black);
+  width: 120px;
+  border-radius: 1rem;
+  border: 5px var(--black) solid;
+  font-size: 20px;
+  background-color: var(--white);
+  transition: background-color 0.4002s, color 0.40021s;
+}
+.upgrade:hover {
+  cursor: pointer;
+  color: var(--white);
+  background-color: antiquewhite;
+}
+.cooldownPrice {
+  color: rgb(184, 156, 0);
+}
+.pointsPrice {
+  color: rgb(184, 156, 0);
+}
+
+.upgradePrice {
+  color: var(--black);
+  width: 120px;
+  border-radius: 1rem;
+  border: 5px var(--black) solid;
+  font-size: 20px;
+  background-color: var(--white);
+  transition: background-color 0.4002s, color 0.40021s;
+}
+.upgradePrice:hover {
+  cursor: pointer;
+  color: var(--white);
+  background-color: antiquewhite;
+}
+
+.settings {
+  width: 150px;
+  border-radius: 1rem;
+  border: 5px var(--black) solid;
+  font-size: 20px;
+  background-color: rgb(124, 124, 124);
+  color: rgb(255, 255, 255);
+  transition: background-color 0.3s;
+}
+.settings:hover {
+  cursor: pointer;
+  background-color: rgb(212, 212, 212);
+}
+.settingsModal {
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px black solid;
+  width: 300px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 1rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(124, 124, 124);
+}
+.overlay {
+  top: -10px;
+  left: -10px;
+  width: 5000px;
+  height: 5000px;
+  position: fixed;
+  z-index: 2;
+  background-color: var(--black);
+  opacity: 30%;
+}
+.done {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 1rem;
+  border: 5px var(--black) solid;
+}
+.darkMode {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
+.app {
+  border: 7px var(--black) solid;
+  width: fit-content;
+  padding: 10px 10px 10px 10px;
+  border-radius: 1rem;
+}
+.volumeSFX {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 8px;
+  border-radius: 1rem;
+  color: red;
+  background-color: rgb(0, 0, 0);
+}
+.volumeSFX::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: white; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%;
+}
